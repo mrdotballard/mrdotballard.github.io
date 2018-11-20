@@ -13,7 +13,7 @@ h1 {
 a {
   color: #f00;
 }
-h2 + p {
+h2 ~ p {
   font-size: 0.8em;
   font-style: italic;
   margin: 1em auto 0;
@@ -21,7 +21,7 @@ h2 + p {
   text-align: center;
 }
 
-/*HEADER STYLES */
+/* HEADER STYLES */
 .header {
   background-color: #000;
   color: #fff;
@@ -62,14 +62,14 @@ h2 + p {
 .header-nav a {
   color: #fff;
 }
-.nav-links a{
+.nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
 .nav-links a:hover,
-.nav-links a:active {
+.nav-links a:active  {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a {
@@ -79,13 +79,13 @@ h2 + p {
   color: #fff;
 }
 
-/*FOOTER STYLES */
+/* FOOTER STYLES */
 .footer {
   background-color: #000;
   padding: 10vh 0 15vh;
   text-align: center;
 }
-.footer img{
+.footer-logo img {
   width: 50px;
 }
 .footer h3 {
@@ -99,21 +99,65 @@ h2 + p {
 .footer-nav li {
   display: inline-block;
   margin: 2em 1em 0;
-
 }
 .footer-nav a {
   color: #ccc;
 }
+.footer-social {
+  display: inline-block;
+  margin-top: 2em;
+}
+
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
 }
-.full-hero:hover {
-  background-color: pink;
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
 }
+.hero-content {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  text-transform: uppercase;
+  transform: translate(0, -50%);
+}
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.8)
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+.hero-content .social-link {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #556c83;
+}
+.hero-content .social-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+/* .hero-social {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.hero-social > li {
+  display: inline-block;
+  margin: 0 0.5em;
+} */
+
 
 /* SOCIAL STYLES */
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
 .social-link {
   background: rgba(150, 150, 150, 0.5);
   border-radius: 99px;
@@ -130,16 +174,6 @@ h2 + p {
   text-decoration: none;
   vertical-align: middle;
   width: 2.5em;
-}
-.social-link:hover,
-.social-link:active {
-  background-color: pink;
-}
-/* .social- */
-.social-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
 }
 .social-list > li {
   display: inline-block;
@@ -177,7 +211,6 @@ h2 + p {
 }
 .bio-copy {
   font-size: 1em;
-  line-height: 1.5;
 }
 .bio-copy a {
   color: green;
