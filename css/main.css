@@ -6,8 +6,12 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: helvetica, arial, sans;
+  font-family: 'Open Sans', helvetica, arial, sans;
   min-height: 100vh;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, sans;
+  font-weight: 100;
 }
 .content-container {
   display: flex;
@@ -22,6 +26,9 @@ h1 {
 }
 h2 {
   font-size: 2em;
+}
+.bio-box h3 {
+  font-family: 'PT Serif', serif, 'Raleway';
 }
 a {
   color: #6397b5;
@@ -137,10 +144,7 @@ h4 {
 .footer .drop-menu:before {
   display: none;
 }
-.footer .drop-trigger {
-  background: red;
-  /* padding: 0 0 0 1em; */
-}
+
 .footer .drop-menu {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   display: none;
@@ -417,15 +421,15 @@ h4 {
   color: #fff;
   display: inline-block;
   font-family: helvetica, arial, sans;
-  font-size: 1em;
+  font-size: 1.7em;
   font-weight: bold;
-  height: 2.5em;
+  height: 1.5em;
   line-height: 1;
-  padding-top: 0.85em;
+  padding-top: 0.25em;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  width: 2.5em;
+  width: 1.5em;
 }
 .social-list > li {
   display: inline-block;
@@ -683,13 +687,13 @@ vertical-align: middle;
   left: 0;
   position: absolute;
   top: 10vh;
-  max-height: 0;
+  height: 0vh;
   overflow: hidden;
   padding: 0;
   text-align: center;
   transition: all 0.5s ease-in-out;
   width: 100vw;
-  z-index: 9;
+  z-index: 21;
 }
 .header-nav li {
   display: block;
@@ -707,14 +711,18 @@ vertical-align: middle;
 }
 /* HIDE DROPDOWN IN NAV MENU */
 .header-nav .dropdown:hover .drop-menu,
-.header-nav .drop-trigger:after {
+.header-nav .drop-trigger:after,
+.footer .dropdown:hover .drop-menu,
+.footer .drop-trigger:after{
   display: none;
 }
-.header-nav .drop-trigger {
+
+.header-nav .drop-trigger,
+.footer .drop-trigger {
   padding-right: 0;
 }
 .mobile-menu-check:checked ~ .header-nav {
-  max-height: 1000px;
+  height: 90vh;
 }
 .mobile-menu-check:checked ~ .show-mobile-menu:after {
   color: #ed6e2f;
