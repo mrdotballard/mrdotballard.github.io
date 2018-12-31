@@ -328,7 +328,7 @@ h4 {
 .col-two .col-content {
   flex: 1;
 }
-/*PAGE STYLES*/
+/*PAGE STYLES (blog only??)*/
 .page {
   margin: 10vh auto 15vh;
   max-width: 980px;
@@ -353,7 +353,7 @@ h4 {
   box-sizing: border-box;
   height: 90vh;
 }
-.full-hero:after {
+.full-hero:after { /*down arrow*/
   border: 10px solid;
   border-color: #fff transparent transparent;
   bottom: 2vh;
@@ -565,6 +565,7 @@ h4 {
   text-align: left;
   /* padding-left: 5em; */
 }
+/* blog recent list */
 .blog-title-list {
   list-style: none;
   padding: 0;
@@ -579,6 +580,7 @@ h4 {
   font-style: italic;
   margin-top: 0.5em;
 }
+/* blog excerpts */
 .blog-posts ~ .blog-posts {
   border-top: 1px dotted rgba(0, 0, 0, 0.1);
   margin-top: 4em;
