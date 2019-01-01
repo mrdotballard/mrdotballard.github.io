@@ -6,9 +6,9 @@ function activateGallery() {
   let mainImage = document.querySelector("#gallery-photo img");
 
   thumbnails.forEach(function(thumbnail) {
-    // let largeVersion = new Image();
+    let largeVersion = new Image();
     let newImageSrc = thumbnail.dataset.largeVersion;
-    // largeVersion.src = newImageSrc;
+    largeVersion.src = newImageSrc;
 
     thumbnail.addEventListener("click", function() {
       // Set clicked image as main image.
